@@ -7,7 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('links');
+  this.route('links', function() {
+    this.route('show', {
+      path: ':link_id'
+    });
+  });
 });
 
 export default Router;
