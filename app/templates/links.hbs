@@ -2,7 +2,7 @@
 
 <ul> Current Links
 {{#each model as |link|}}
-	<li> {{link.id}} - {{link.name}} {{#link-to 'links.show' link}} Details {{/link-to}} </li>
+	<li>{{link-item link=link}}</li>
 {{/each}}
 </ul>
 
